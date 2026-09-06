@@ -18,7 +18,7 @@ function KiraWebsite() {
         </section>
         <section aria-labelledby="verify" style={{ marginTop: 32 }}>
           <h2 id="verify">Kira Verify</h2>
-          <p>Verification code validity windows default to 300 seconds (5 minutes).</p>
+          <p>Verification code validity windows default to 600 seconds (10 minutes).</p>
           <p>A window is active from issuance until, but excluding, its exact expiry timestamp. Set ttlSeconds from 1 to 3600.</p>
         </section>
         <p style={{ marginTop: 40, borderTop: '1px solid #bac4b9', paddingTop: 20 }}>These local fixtures model delivery and expiry policies. They do not provide a hosted webhook or authentication service.</p>
