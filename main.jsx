@@ -14,7 +14,7 @@ function KiraWebsite() {
         <section aria-labelledby="events" style={{ marginTop: 32 }}>
           <h2 id="events">Kira Events</h2>
           <p>Webhook delivery with 5 retries after the initial attempt: up to 6 total attempts by default.</p>
-          <p>Retry HTTP 429, HTTP 5xx, and transport errors. Stop on HTTP 2xx success or other HTTP statuses. Set maxRetries from 0 to 10.</p>
+          <p>Retry HTTP 408, HTTP 429, HTTP 5xx, and transport errors. Stop on HTTP 2xx success or other HTTP statuses. Set maxRetries from 0 to 10.</p>
         </section>
         <section aria-labelledby="verify" style={{ marginTop: 32 }}>
           <h2 id="verify">Kira Verify</h2>
