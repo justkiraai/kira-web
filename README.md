@@ -10,7 +10,7 @@ The build uses `/kira-web/` as its base path for `https://justkiraai.github.io/k
 
 ## Current claims
 
-- Kira Events defaults to **5 retries after the initial attempt**, or **6 total attempts**. HTTP 2xx succeeds; HTTP 429, HTTP 5xx, and thrown transport errors retry immediately. Other HTTP statuses stop. Explicit `maxRetries` accepts integers from 0 through 10.
+- Kira Events defaults to **5 retries after the initial attempt**, or **6 total attempts**. HTTP 2xx succeeds; HTTP 408, HTTP 429, HTTP 5xx, and thrown transport errors retry immediately. Other HTTP statuses stop. Explicit `maxRetries` accepts integers from 0 through 10.
 - Kira Verify defaults to **600 seconds (10 minutes)**. Timestamp units are Unix milliseconds. Validity is `issuedAt <= now < expiresAt`, so the exact expiry timestamp is inactive. Explicit `ttlSeconds` accepts integers from 1 through 3600.
 
 The products are local policy fixtures, not hosted services. Events uses an injected transport. Verify only calculates and checks expiry metadata.
